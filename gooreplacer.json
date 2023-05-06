@@ -1,51 +1,69 @@
 {
-"createBy": "http://liujiacai.net/gooreplacer/",
-"createAt": "Fri Feb 04 2022 00:00:00 GMT+0800 (China Standard Time)",
-"rules": {
-"ajax.googleapis.com": {
-"dstURL": "ajax.loli.net",
-"kind": "wildcard",
-"enable": true
-},
-"fonts.googleapis.com": {
-"dstURL": "fonts.loli.net",
-"kind": "wildcard",
-"enable": false
-},
-"themes.googleusercontent.com": {
-"dstURL": "themes.loli.net",
-"kind": "wildcard",
-"enable": true
-},
-"google.com/recaptcha": {
-"dstURL": "recaptcha.net/recaptcha",
-"kind": "wildcard",
-"enable": true
-},
-"fonts.gstatic.com": {
-"dstURL": "gstatic.loli.net",
-"kind": "wildcard",
-"enable": false
-},
-"secure.gravatar.com": {
-"dstURL": "gravatar.loli.net",
-"kind": "wildcard",
-"enable": true
-},
-"platform.twitter.com/widgets.js": {
-"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/widgets.js",
-"kind": "wildcard",
-"enable": true
-},
-"apis.google.com/js/api.js": {
-"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/api.js",
-"kind": "wildcard",
-"enable": true
-},
-"apis.google.com/js/plusone.js": {
-"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/plusone.js",
-"kind": "wildcard",
-"enable": true
-}
-}
+	"createBy": "http://liujiacai.net/gooreplacer/",
+	"createAt": "Fri Feb 04 2022 00:00:00 GMT+0800 (China Standard Time)",
+	"rules": {
+		"ajax.googleapis.com": {
+			"dstURL": "ajax.loli.net",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"fonts.googleapis.com": {
+			"dstURL": "fonts.loli.net",
+			"kind": "wildcard",
+			"enable": false
+		},
+		"themes.googleusercontent.com": {
+			"dstURL": "themes.loli.net",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"google.com/recaptcha": {
+			"dstURL": "recaptcha.net/recaptcha",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"fonts.gstatic.com": {
+			"dstURL": "gstatic.loli.net",
+			"kind": "wildcard",
+			"enable": false
+		},
+		"secure.gravatar.com": {
+			"dstURL": "gravatar.loli.net",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"platform.twitter.com/widgets.js": {
+			"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/widgets.js",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"apis.google.com/js/api.js": {
+			"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/api.js",
+			"kind": "wildcard",
+			"enable": true
+		},
+		"apis.google.com/js/plusone.js": {
+			"dstURL": "cdn.jsdelivr.net/gh/jiacai2050/gooreplacer@gh-pages/proxy/plusone.js",
+			"kind": "wildcard",
+			"enable": true
+		}
+	},
+	"redirect-rules": [
+		{
+			"src": "www.google.com/recaptcha",
+			"kind": "wildcard",
+			"dst": "recaptcha.net/recaptcha",
+			"enable": true
+		}
+	],
+	"request-headers": [
+		{
+			"src": "https://www.itbaizhan.com/*",
+			"kind": "wildcard",
+			"op": "modify",
+			"name": "cookie",
+			"value": "user=a%3A2%3A%7Bs%3A2%3A%22id%22%3Bs%3A32%3A%22f44e1fc05df611edbdcb7cd30ad32caa%22%3Bs%3A5%3A%22email%22%3Bs%3A21%3A%22abc1801026311%40126.com%22%3B%7D;",
+			"enable": true
+		}
+	]
 }
