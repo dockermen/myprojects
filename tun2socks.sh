@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt install unzip
 # 检查是否为root用户
 if [ "$(id -u)" != "0" ]; then
    echo "此脚本需要root权限运行" 
